@@ -1,0 +1,816 @@
+# Logfile created on 2017-09-05 00:04:11 +0900 by logger.rb/44203
+I, [2017-09-05T00:04:11.568531 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:04:11 +0900
+I, [2017-09-05T00:04:11.570735 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:04:11.570914 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\"><div class=\"editable data-type-div\"></div><div class=\"editable data-type-div\"><h1>おすすめのノートpc</h1></div><div class=\"editable data-type-div\"><ul style=\"margin-left: 200px; list-style-type: circle;\"><li>初心者向けノートPC</li><li>学生向けノートPC</li><li>ハイスペックノートPC</li></ul><p style=\"margin-left: 40px;\">&nbsp;</p><p style=\"margin-left: 40px;\">&nbsp;</p></div><div class=\"editable data-type-h\"><h1>初心者向けノートPC<br></h1></div><div class=\"editable data-type-div\"><ul style=\"margin-left: 120px;\"><li>性能</li></ul><ol style=\"margin-left: 200px;\"><li><span style=\"font-size:1rem\">CPU</span></li><li>メモリ</li><li>ストレージ</li></ol></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:04:11.640518 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (25.4ms)
+I, [2017-09-05T00:04:11.644012 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.3ms)
+I, [2017-09-05T00:04:11.655048 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:04:11.655154 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.7ms)
+I, [2017-09-05T00:04:11.655749 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (8.2ms)
+I, [2017-09-05T00:04:11.658682 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.2ms)
+I, [2017-09-05T00:04:11.658767 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (48.8ms)
+I, [2017-09-05T00:04:14.295418 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (89.9ms)
+I, [2017-09-05T00:04:14.295632 #3467]  INFO -- : Completed 200 OK in 2725ms (Views: 109.4ms | ActiveRecord: 3.7ms)
+I, [2017-09-05T00:04:17.548670 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:04:17 +0900
+I, [2017-09-05T00:04:17.550021 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:04:17.550220 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->                                                                                                                                                                                         \n    <section id=\"services\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n\n       <p> 上記の3点を紹介したいと思います。</p>\n    <section id=\"recomende_laptop\">\n      <h1>初心者向けノートPC</h1>\n       <ul>\n         <li>性能</li>\n       <ol>\n         <li>CPU</li>\n         <li>メモリ</li>\n         <li>ストレージ</li>\n       </ol>\n         <li>機動性</li>\n         <li>重さ</li>\n       </ul>\n\n    </section>\n\n"}
+I, [2017-09-05T00:04:17.607361 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (13.1ms)
+I, [2017-09-05T00:04:17.607584 #3467]  INFO -- : Completed 200 OK in 57ms (Views: 47.9ms | ActiveRecord: 1.3ms)
+I, [2017-09-05T00:10:11.829328 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:10:11 +0900
+I, [2017-09-05T00:10:11.830302 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:10:11.830411 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n\n       <p> 上記の3点を紹介したいと思います。</p>\n    <section id=\"recomende_laptop\">\n      <ul>性能\n        <li>\n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>                                                                                                                                                                                            \n        </ul></dd>\n\n\n    </section>\n\n\n\n"}
+I, [2017-09-05T00:10:11.842245 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (4.7ms)
+I, [2017-09-05T00:10:11.842491 #3467]  INFO -- : Completed 200 OK in 12ms (Views: 5.6ms | ActiveRecord: 1.2ms)
+I, [2017-09-05T00:10:18.661824 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:10:18 +0900
+I, [2017-09-05T00:10:18.663090 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:10:18.663218 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\">  <div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul><p> 上記の3点を紹介したいと思います。</p><section id=\"recomende_laptop\"><ul>性能<li>　<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></section></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:10:18.678390 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (6.7ms)
+I, [2017-09-05T00:10:18.678883 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:10:18.681058 #3467]  INFO -- :   Rendered inline template (0.9ms)
+I, [2017-09-05T00:10:18.681363 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (1.7ms)
+I, [2017-09-05T00:10:18.683357 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (4.1ms)
+I, [2017-09-05T00:10:18.683765 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:10:18.683840 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (12.5ms)
+I, [2017-09-05T00:10:18.897043 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (11.1ms)
+I, [2017-09-05T00:10:18.897251 #3467]  INFO -- : Completed 200 OK in 234ms (Views: 11.8ms | ActiveRecord: 4.1ms)
+I, [2017-09-05T00:10:21.050719 #3467]  INFO -- : Started PATCH "/susanoo/page_contents/2" for 127.0.0.1 at 2017-09-05 00:10:21 +0900
+I, [2017-09-05T00:10:21.052411 #3467]  INFO -- : Processing by Susanoo::PageContentsController#update as JS
+I, [2017-09-05T00:10:21.052611 #3467]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"viauQaXPSFNtNkNm7fitc7TqO9NRpUc4BayemwDWEeI=", "template_id"=>"", "mode"=>"", "iframe_path"=>"/susanoo/page_contents/content?id=2&page_id=1", "page_content"=>{"content"=>"\r\n            <div class=\"susanoo-editable-field\" data-content=\"コンテンツの先頭が見出し要素ではありません\"><div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul><p>上記の3点を紹介したいと思います。</p><section id=\"recomende_laptop\"><ul>性能<li>　<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></section></div></div>\r\n\r\n          ", "page_id"=>"1"}, "_save_temporarily"=>"", "commit"=>"save", "id"=>"2"}
+W, [2017-09-05T00:10:21.077265 #3467]  WARN -- : In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+I, [2017-09-05T00:10:21.236006 #3467]  INFO -- :   Rendered susanoo/page_contents/create.js.coffee (2.4ms)
+I, [2017-09-05T00:10:21.236294 #3467]  INFO -- : Completed 200 OK in 183ms (Views: 30.5ms | ActiveRecord: 112.9ms)
+I, [2017-09-05T00:10:21.251830 #3467]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 00:10:21 +0900
+I, [2017-09-05T00:10:21.252922 #3467]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T00:10:21.253007 #3467]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T00:10:21.274590 #3467]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (11.4ms)
+I, [2017-09-05T00:10:21.280905 #3467]  INFO -- :   Rendered shared/_navigation.html.erb (4.5ms)
+I, [2017-09-05T00:10:21.283318 #3467]  INFO -- : Completed 200 OK in 30ms (Views: 18.9ms | ActiveRecord: 4.8ms)
+I, [2017-09-05T00:10:21.349132 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:10:21 +0900
+I, [2017-09-05T00:10:22.894415 #3467]  INFO -- : Started GET "/susanoo/page_contents/2/edit" for 127.0.0.1 at 2017-09-05 00:10:22 +0900
+I, [2017-09-05T00:10:22.896975 #3467]  INFO -- : Processing by Susanoo::PageContentsController#edit as HTML
+I, [2017-09-05T00:10:22.897053 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:10:22.917972 #3467]  INFO -- :   Rendered susanoo/page_contents/_form.html.erb (5.5ms)
+I, [2017-09-05T00:10:22.918116 #3467]  INFO -- :   Rendered susanoo/page_contents/edit.html.erb within layouts/editor (5.8ms)
+I, [2017-09-05T00:10:22.919034 #3467]  INFO -- :   Rendered plugins/form/_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:10:22.919225 #3467]  INFO -- :   Rendered plugins/form/_genre_list.html.erb (0.1ms)
+I, [2017-09-05T00:10:22.919539 #3467]  INFO -- :   Rendered plugins/form/_section_news.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.919920 #3467]  INFO -- :   Rendered plugins/form/_section_news_by_path.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.920257 #3467]  INFO -- :   Rendered plugins/form/_emergency.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.920436 #3467]  INFO -- :   Rendered plugins/form/_genre_down_list.html.erb (0.0ms)
+I, [2017-09-05T00:10:22.920801 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.921151 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list_truncate.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.921342 #3467]  INFO -- :   Rendered plugins/form/_section.html.erb (0.0ms)
+I, [2017-09-05T00:10:22.921508 #3467]  INFO -- :   Rendered plugins/form/_section_top_list.html.erb (0.0ms)
+I, [2017-09-05T00:10:22.921825 #3467]  INFO -- :   Rendered plugins/form/_sitemap.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.922000 #3467]  INFO -- :   Rendered plugins/form/_sub_genre_list.html.erb (0.1ms)
+I, [2017-09-05T00:10:22.922542 #3467]  INFO -- :   Rendered plugins/form/_counter.html.erb (0.3ms)
+I, [2017-09-05T00:10:22.923320 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_calendar.html.erb (0.5ms)
+I, [2017-09-05T00:10:22.923895 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_pickup.html.erb (0.3ms)
+I, [2017-09-05T00:10:22.924357 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_page_list.html.erb (0.2ms)
+I, [2017-09-05T00:10:22.925680 #3467]  INFO -- : Completed 200 OK in 29ms (Views: 13.6ms | ActiveRecord: 6.3ms)
+I, [2017-09-05T00:10:22.944520 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:10:22 +0900
+I, [2017-09-05T00:10:23.014873 #3467]  INFO -- : Started GET "/susanoo/page_contents/content?id=2&page_id=1" for 127.0.0.1 at 2017-09-05 00:10:23 +0900
+I, [2017-09-05T00:10:23.015732 #3467]  INFO -- : Processing by Susanoo::PageContentsController#content as HTML
+I, [2017-09-05T00:10:23.015793 #3467]  INFO -- :   Parameters: {"id"=>"2", "page_id"=>"1"}
+I, [2017-09-05T00:10:23.042318 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (8.7ms)
+I, [2017-09-05T00:10:23.042914 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.2ms)
+I, [2017-09-05T00:10:23.046622 #3467]  INFO -- :   Rendered inline template (1.3ms)
+I, [2017-09-05T00:10:23.047099 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (2.5ms)
+I, [2017-09-05T00:10:23.049469 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (5.9ms)
+I, [2017-09-05T00:10:23.050038 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:10:23.050384 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (17.1ms)
+I, [2017-09-05T00:10:23.050815 #3467]  INFO -- : Completed 200 OK in 35ms (Views: 15.8ms | ActiveRecord: 6.6ms)
+I, [2017-09-05T00:12:02.117567 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:12:02 +0900
+I, [2017-09-05T00:12:02.118411 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:12:02.118528 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>                                                                                                                                                                                           \n    </section>\n\n       <p> 上記の3点を紹介したいと思います。</p>\n    <section id=\"recomende_laptop\">\n\n      <ul>性能\n        <li>\n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n"}
+I, [2017-09-05T00:12:02.125336 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (2.5ms)
+I, [2017-09-05T00:12:02.125547 #3467]  INFO -- : Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.7ms)
+I, [2017-09-05T00:12:16.197190 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:12:16 +0900
+I, [2017-09-05T00:12:16.199519 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:12:16.199598 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:12:16.211201 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.4ms)
+I, [2017-09-05T00:12:16.211424 #3467]  INFO -- : Completed 404 Not Found in 12ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:12:16.212171 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:12:16 +0900
+I, [2017-09-05T00:12:16.214488 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:12:16.214562 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:12:16.215943 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:12:16.216104 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T00:12:57.782235 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:12:57 +0900
+I, [2017-09-05T00:12:57.783583 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:12:57.783781 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\">  <div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div></section><p> 上記の3点を紹介したいと思います。</p><section id=\"recomende_laptop\"><ul>性能<li>　<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:12:57.810155 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (10.6ms)
+I, [2017-09-05T00:12:57.810430 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:12:57.812301 #3467]  INFO -- :   Rendered inline template (0.8ms)
+I, [2017-09-05T00:12:57.812577 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (1.6ms)
+I, [2017-09-05T00:12:57.813515 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.9ms)
+I, [2017-09-05T00:12:57.813854 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:12:57.813979 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (14.9ms)
+I, [2017-09-05T00:12:58.140680 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (17.9ms)
+I, [2017-09-05T00:12:58.141302 #3467]  INFO -- : Completed 200 OK in 357ms (Views: 19.8ms | ActiveRecord: 5.5ms)
+I, [2017-09-05T00:12:59.094644 #3467]  INFO -- : Started PATCH "/susanoo/page_contents/2" for 127.0.0.1 at 2017-09-05 00:12:59 +0900
+I, [2017-09-05T00:12:59.095927 #3467]  INFO -- : Processing by Susanoo::PageContentsController#update as JS
+I, [2017-09-05T00:12:59.096084 #3467]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"viauQaXPSFNtNkNm7fitc7TqO9NRpUc4BayemwDWEeI=", "template_id"=>"", "mode"=>"", "iframe_path"=>"/susanoo/page_contents/content?id=2&page_id=1", "page_content"=>{"content"=>"\r\n            <div class=\"susanoo-editable-field\" data-content=\"コンテンツの先頭が見出し要素ではありません\"><div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div></section><p>上記の3点を紹介したいと思います。</p><section id=\"recomende_laptop\"><ul>性能<li>　<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></div></div>\r\n\r\n          ", "page_id"=>"1"}, "_save_temporarily"=>"", "commit"=>"save", "id"=>"2"}
+W, [2017-09-05T00:12:59.118497 #3467]  WARN -- : In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+I, [2017-09-05T00:12:59.135950 #3467]  INFO -- :   Rendered susanoo/page_contents/create.js.coffee (1.2ms)
+I, [2017-09-05T00:12:59.136253 #3467]  INFO -- : Completed 200 OK in 40ms (Views: 1.9ms | ActiveRecord: 11.3ms)
+I, [2017-09-05T00:12:59.151768 #3467]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 00:12:59 +0900
+I, [2017-09-05T00:12:59.153198 #3467]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T00:12:59.153279 #3467]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T00:12:59.185773 #3467]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (18.2ms)
+I, [2017-09-05T00:12:59.192145 #3467]  INFO -- :   Rendered shared/_navigation.html.erb (5.5ms)
+I, [2017-09-05T00:12:59.193495 #3467]  INFO -- : Completed 200 OK in 40ms (Views: 24.5ms | ActiveRecord: 6.5ms)
+I, [2017-09-05T00:12:59.242766 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:12:59 +0900
+I, [2017-09-05T00:13:02.015480 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:13:02 +0900
+I, [2017-09-05T00:13:02.016396 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:13:02.016471 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:13:02.027209 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (7.5ms)
+I, [2017-09-05T00:13:02.027470 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:13:02.028313 #3467]  INFO -- :   Rendered inline template (0.3ms)
+I, [2017-09-05T00:13:02.028437 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:13:02.028935 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.3ms)
+I, [2017-09-05T00:13:02.029103 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:13:02.029190 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (9.7ms)
+I, [2017-09-05T00:13:02.029371 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 7.3ms | ActiveRecord: 3.5ms)
+I, [2017-09-05T00:14:01.828823 #3467]  INFO -- : Started GET "/susanoo/page_contents/2/edit" for 127.0.0.1 at 2017-09-05 00:14:01 +0900
+I, [2017-09-05T00:14:01.829847 #3467]  INFO -- : Processing by Susanoo::PageContentsController#edit as HTML
+I, [2017-09-05T00:14:01.829992 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:14:01.847382 #3467]  INFO -- :   Rendered susanoo/page_contents/_form.html.erb (3.5ms)
+I, [2017-09-05T00:14:01.847511 #3467]  INFO -- :   Rendered susanoo/page_contents/edit.html.erb within layouts/editor (3.8ms)
+I, [2017-09-05T00:14:01.848389 #3467]  INFO -- :   Rendered plugins/form/_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:14:01.848573 #3467]  INFO -- :   Rendered plugins/form/_genre_list.html.erb (0.0ms)
+I, [2017-09-05T00:14:01.848882 #3467]  INFO -- :   Rendered plugins/form/_section_news.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.849250 #3467]  INFO -- :   Rendered plugins/form/_section_news_by_path.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.849577 #3467]  INFO -- :   Rendered plugins/form/_emergency.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.849753 #3467]  INFO -- :   Rendered plugins/form/_genre_down_list.html.erb (0.0ms)
+I, [2017-09-05T00:14:01.850078 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.850380 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list_truncate.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.850556 #3467]  INFO -- :   Rendered plugins/form/_section.html.erb (0.0ms)
+I, [2017-09-05T00:14:01.850728 #3467]  INFO -- :   Rendered plugins/form/_section_top_list.html.erb (0.0ms)
+I, [2017-09-05T00:14:01.850974 #3467]  INFO -- :   Rendered plugins/form/_sitemap.html.erb (0.1ms)
+I, [2017-09-05T00:14:01.851147 #3467]  INFO -- :   Rendered plugins/form/_sub_genre_list.html.erb (0.0ms)
+I, [2017-09-05T00:14:01.851583 #3467]  INFO -- :   Rendered plugins/form/_counter.html.erb (0.3ms)
+I, [2017-09-05T00:14:01.851914 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_calendar.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.852239 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_pickup.html.erb (0.2ms)
+I, [2017-09-05T00:14:01.852505 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:14:01.853657 #3467]  INFO -- : Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 4.6ms)
+I, [2017-09-05T00:14:01.878514 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:14:01 +0900
+I, [2017-09-05T00:14:02.097691 #3467]  INFO -- : Started GET "/susanoo/page_contents/content?id=2&page_id=1" for 127.0.0.1 at 2017-09-05 00:14:02 +0900
+I, [2017-09-05T00:14:02.098620 #3467]  INFO -- : Processing by Susanoo::PageContentsController#content as HTML
+I, [2017-09-05T00:14:02.098695 #3467]  INFO -- :   Parameters: {"id"=>"2", "page_id"=>"1"}
+I, [2017-09-05T00:14:02.116799 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (4.5ms)
+I, [2017-09-05T00:14:02.117038 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:14:02.118073 #3467]  INFO -- :   Rendered inline template (0.3ms)
+I, [2017-09-05T00:14:02.118209 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.6ms)
+I, [2017-09-05T00:14:02.118973 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.8ms)
+I, [2017-09-05T00:14:02.119186 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:14:02.119268 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (7.1ms)
+I, [2017-09-05T00:14:02.119432 #3467]  INFO -- : Completed 200 OK in 21ms (Views: 6.0ms | ActiveRecord: 4.7ms)
+I, [2017-09-05T00:14:02.323963 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:14:02 +0900
+I, [2017-09-05T00:14:02.325317 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:14:02.325446 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:14:02.327489 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:14:02.327766 #3467]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:14:02.412448 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:14:02 +0900
+I, [2017-09-05T00:14:02.414223 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:14:02.414600 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:14:02.418560 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:14:02.418776 #3467]  INFO -- : Completed 404 Not Found in 4ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+I, [2017-09-05T00:14:08.647601 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:14:08 +0900
+I, [2017-09-05T00:14:08.649060 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:14:08.649218 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>性能\n        <li>                                                                                                                                                                                                \n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:14:08.663068 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (4.0ms)
+I, [2017-09-05T00:14:08.663786 #3467]  INFO -- : Completed 200 OK in 14ms (Views: 5.7ms | ActiveRecord: 1.6ms)
+I, [2017-09-05T00:14:18.271154 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:14:18 +0900
+I, [2017-09-05T00:14:18.272235 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:14:18.272358 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>性能\n        <li>                                                                                                                                                                                                \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n\n"}
+I, [2017-09-05T00:14:18.291914 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (9.6ms)
+I, [2017-09-05T00:14:18.292460 #3467]  INFO -- : Completed 200 OK in 20ms (Views: 11.0ms | ActiveRecord: 1.9ms)
+I, [2017-09-05T00:14:27.836817 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:14:27 +0900
+I, [2017-09-05T00:14:27.838332 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:14:27.838597 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>性能\n        <li>                                                                                                                                                                                                \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n\n"}
+I, [2017-09-05T00:14:27.851108 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (5.2ms)
+I, [2017-09-05T00:14:27.851338 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 5.9ms | ActiveRecord: 1.2ms)
+I, [2017-09-05T00:15:47.341301 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:15:47 +0900
+I, [2017-09-05T00:15:47.342500 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:15:47.342676 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>性能                                                                                                                                                                                           \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:15:47.357920 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (5.8ms)
+I, [2017-09-05T00:15:47.359206 #3467]  INFO -- : Completed 200 OK in 16ms (Views: 8.5ms | ActiveRecord: 1.4ms)
+I, [2017-09-05T00:16:04.283828 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:16:04 +0900
+I, [2017-09-05T00:16:04.285121 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:16:04.285236 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <li>性能                                                                                                                                                                                           \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:16:04.296284 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (3.3ms)
+I, [2017-09-05T00:16:04.296648 #3467]  INFO -- : Completed 200 OK in 11ms (Views: 4.2ms | ActiveRecord: 1.4ms)
+I, [2017-09-05T00:16:22.694446 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:16:22 +0900
+I, [2017-09-05T00:16:22.695824 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:16:22.695962 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>性能                                                                                                                                                                                           \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:16:22.709008 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (6.0ms)
+I, [2017-09-05T00:16:22.709601 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 1.3ms)
+I, [2017-09-05T00:16:35.267406 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:16:35 +0900
+I, [2017-09-05T00:16:35.268462 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:16:35.268598 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul>                                                                                                                                                                              \n        　<ul>性能             \n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:16:35.278152 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (2.3ms)
+I, [2017-09-05T00:16:35.278419 #3467]  INFO -- : Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 1.1ms)
+I, [2017-09-05T00:17:23.781272 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:17:23 +0900
+I, [2017-09-05T00:17:23.782943 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:17:23.783121 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul> \n           <li> 性能                                                                                                                                                                                \n        　<ul>         \n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:17:23.792702 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (2.3ms)
+I, [2017-09-05T00:17:23.793304 #3467]  INFO -- : Completed 200 OK in 10ms (Views: 3.4ms | ActiveRecord: 1.2ms)
+I, [2017-09-05T00:17:32.788127 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:17:32 +0900
+I, [2017-09-05T00:17:32.789153 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:17:32.789249 #3467]  INFO -- :   Parameters: {"source"=>"  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います。\n    <section id=\"recomende_laptop\">\n\n      <ul> \n           <li> 性能                                                                                                                                                                                \n        　<ul>         \n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:17:32.824549 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (3.9ms)
+I, [2017-09-05T00:17:32.824922 #3467]  INFO -- : Completed 200 OK in 36ms (Views: 5.6ms | ActiveRecord: 1.9ms)
+I, [2017-09-05T00:17:35.130314 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:17:35 +0900
+I, [2017-09-05T00:17:35.131769 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:17:35.131863 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\">  <div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div></section>上記の3点を紹介したいと思います。<section id=\"recomende_laptop\"><ul><li> 性能　<ul><li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:17:35.149505 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (9.8ms)
+I, [2017-09-05T00:17:35.150612 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.3ms)
+I, [2017-09-05T00:17:35.152745 #3467]  INFO -- :   Rendered inline template (0.3ms)
+I, [2017-09-05T00:17:35.152914 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.7ms)
+I, [2017-09-05T00:17:35.153930 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.9ms)
+I, [2017-09-05T00:17:35.154310 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:17:35.154396 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (15.3ms)
+I, [2017-09-05T00:17:35.405570 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (9.6ms)
+I, [2017-09-05T00:17:35.405920 #3467]  INFO -- : Completed 200 OK in 274ms (Views: 10.8ms | ActiveRecord: 5.4ms)
+I, [2017-09-05T00:18:55.356501 #3467]  INFO -- : Started POST "/susanoo/page_contents/direct_html" for 127.0.0.1 at 2017-09-05 00:18:55 +0900
+I, [2017-09-05T00:18:55.357658 #3467]  INFO -- : Processing by Susanoo::PageContentsController#direct_html as JS
+I, [2017-09-05T00:18:55.357829 #3467]  INFO -- :   Parameters: {"source"=>"\n\n  <!-- Services -->\n    <section id=\"services\">\n          <div class=\"container\">\n      <h1>おすすめのノートパソコン</h1>\n       <ul>\n         <li>初心者向けノートPC</li>\n         <li>学生向けノートPC/li>\n         <li>ハイスペックノートPC</li>\n       </ul>\n           </div>\n    </section>\n\n      上記の3点を紹介したいと思います\n    <section id=\"recomende_laptop\">\n\n      <ul>\n        <li>性能                                                                                                                                                                                            \n        　<ul>　\n          <li>CPU</li>\n          <li>メモリ</li>\n          <li>ストレージ</li>\n      </ul></li>\n        <li>機動性\n      <ul>\n        <li>大きさ</li>\n         <li>重さ</li>\n        <li>バッテリー</li>\n      </ul></li>\n        </ul></dd>\n\n\n    </section>\n\n"}
+I, [2017-09-05T00:18:55.373461 #3467]  INFO -- :   Rendered susanoo/page_contents/direct_html.js.coffee (6.0ms)
+I, [2017-09-05T00:18:55.374757 #3467]  INFO -- : Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 1.2ms)
+I, [2017-09-05T00:18:56.636005 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:18:56 +0900
+I, [2017-09-05T00:18:56.637481 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:18:56.637630 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\">\n<div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div></section>上記の3点を紹介したいと思います<section id=\"recomende_laptop\"><ul><li>性能　<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></div>\n</div>", "mobile"=>"false"}
+I, [2017-09-05T00:18:56.657038 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (9.5ms)
+I, [2017-09-05T00:18:56.657442 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:18:56.659296 #3467]  INFO -- :   Rendered inline template (0.7ms)
+I, [2017-09-05T00:18:56.659580 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (1.5ms)
+I, [2017-09-05T00:18:56.660524 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.9ms)
+I, [2017-09-05T00:18:56.660848 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:18:56.660976 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (14.1ms)
+I, [2017-09-05T00:18:56.848328 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (6.4ms)
+I, [2017-09-05T00:18:56.848539 #3467]  INFO -- : Completed 200 OK in 211ms (Views: 7.8ms | ActiveRecord: 4.7ms)
+I, [2017-09-05T00:18:57.872285 #3467]  INFO -- : Started PATCH "/susanoo/page_contents/2" for 127.0.0.1 at 2017-09-05 00:18:57 +0900
+I, [2017-09-05T00:18:57.873341 #3467]  INFO -- : Processing by Susanoo::PageContentsController#update as JS
+I, [2017-09-05T00:18:57.873456 #3467]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"viauQaXPSFNtNkNm7fitc7TqO9NRpUc4BayemwDWEeI=", "template_id"=>"", "mode"=>"", "iframe_path"=>"/susanoo/page_contents/content?id=2&page_id=1", "page_content"=>{"content"=>"\r\n            <div class=\"susanoo-editable-field\"><div class=\"editable data-type-div\"><!-- Services --><section id=\"services\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div></section>上記の3点を紹介したいと思います<section id=\"recomende_laptop\"><ul><li>性能<ul>　<li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></section></div></div>\r\n\r\n          ", "page_id"=>"1"}, "_save_temporarily"=>"", "commit"=>"save", "id"=>"2"}
+W, [2017-09-05T00:18:57.896385 #3467]  WARN -- : In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+I, [2017-09-05T00:18:57.912141 #3467]  INFO -- :   Rendered susanoo/page_contents/create.js.coffee (0.8ms)
+I, [2017-09-05T00:18:57.912313 #3467]  INFO -- : Completed 200 OK in 39ms (Views: 1.4ms | ActiveRecord: 11.0ms)
+I, [2017-09-05T00:18:57.932140 #3467]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 00:18:57 +0900
+I, [2017-09-05T00:18:57.933646 #3467]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T00:18:57.933712 #3467]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T00:18:57.966490 #3467]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (22.0ms)
+I, [2017-09-05T00:18:57.969767 #3467]  INFO -- :   Rendered shared/_navigation.html.erb (2.4ms)
+I, [2017-09-05T00:18:57.971212 #3467]  INFO -- : Completed 200 OK in 37ms (Views: 26.0ms | ActiveRecord: 4.8ms)
+I, [2017-09-05T00:18:58.043699 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:18:58 +0900
+I, [2017-09-05T00:18:59.684258 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:18:59 +0900
+I, [2017-09-05T00:18:59.685328 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:18:59.685398 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:18:59.696073 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (7.2ms)
+I, [2017-09-05T00:18:59.696387 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:18:59.697418 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:18:59.697515 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.6ms)
+I, [2017-09-05T00:18:59.698045 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.5ms)
+I, [2017-09-05T00:18:59.698222 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:18:59.698294 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (9.7ms)
+I, [2017-09-05T00:18:59.698450 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 2.8ms)
+I, [2017-09-05T00:19:11.392707 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:19:11 +0900
+I, [2017-09-05T00:19:11.393530 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:11.393608 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:19:11.394994 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:19:11.395141 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:19:11.418331 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:19:11 +0900
+I, [2017-09-05T00:19:11.421263 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:11.421428 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:19:11.423030 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:19:11.423174 #3467]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T00:19:46.925582 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:19:46 +0900
+I, [2017-09-05T00:19:46.926531 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:19:46.926624 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:19:46.937367 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (5.6ms)
+I, [2017-09-05T00:19:46.937562 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:19:46.938308 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:19:46.938406 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:19:46.938904 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.2ms)
+I, [2017-09-05T00:19:46.939076 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:19:46.939167 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (7.9ms)
+I, [2017-09-05T00:19:46.939318 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 6.6ms | ActiveRecord: 2.9ms)
+I, [2017-09-05T00:19:47.115393 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:19:47 +0900
+I, [2017-09-05T00:19:47.116270 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:47.116341 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:19:47.120034 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.4ms)
+I, [2017-09-05T00:19:47.120747 #3467]  INFO -- : Completed 404 Not Found in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+I, [2017-09-05T00:19:47.124116 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:19:47 +0900
+I, [2017-09-05T00:19:47.125718 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:47.126174 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:19:47.128835 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:19:47.129075 #3467]  INFO -- : Completed 404 Not Found in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+I, [2017-09-05T00:19:47.131359 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:19:47 +0900
+I, [2017-09-05T00:19:47.132166 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:47.132245 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:19:47.133653 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:19:47.133813 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T00:19:51.720740 #3467]  INFO -- : Started GET "/susanoo/page_contents/2/edit" for 127.0.0.1 at 2017-09-05 00:19:51 +0900
+I, [2017-09-05T00:19:51.721686 #3467]  INFO -- : Processing by Susanoo::PageContentsController#edit as HTML
+I, [2017-09-05T00:19:51.721759 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:19:51.739013 #3467]  INFO -- :   Rendered susanoo/page_contents/_form.html.erb (4.0ms)
+I, [2017-09-05T00:19:51.739149 #3467]  INFO -- :   Rendered susanoo/page_contents/edit.html.erb within layouts/editor (4.3ms)
+I, [2017-09-05T00:19:51.740036 #3467]  INFO -- :   Rendered plugins/form/_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.740225 #3467]  INFO -- :   Rendered plugins/form/_genre_list.html.erb (0.0ms)
+I, [2017-09-05T00:19:51.740540 #3467]  INFO -- :   Rendered plugins/form/_section_news.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.740917 #3467]  INFO -- :   Rendered plugins/form/_section_news_by_path.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.741243 #3467]  INFO -- :   Rendered plugins/form/_emergency.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.741490 #3467]  INFO -- :   Rendered plugins/form/_genre_down_list.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.741807 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.742157 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list_truncate.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.742335 #3467]  INFO -- :   Rendered plugins/form/_section.html.erb (0.0ms)
+I, [2017-09-05T00:19:51.742507 #3467]  INFO -- :   Rendered plugins/form/_section_top_list.html.erb (0.0ms)
+I, [2017-09-05T00:19:51.742754 #3467]  INFO -- :   Rendered plugins/form/_sitemap.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.742935 #3467]  INFO -- :   Rendered plugins/form/_sub_genre_list.html.erb (0.0ms)
+I, [2017-09-05T00:19:51.743363 #3467]  INFO -- :   Rendered plugins/form/_counter.html.erb (0.3ms)
+I, [2017-09-05T00:19:51.743717 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_calendar.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.744048 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_pickup.html.erb (0.2ms)
+I, [2017-09-05T00:19:51.744354 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.746167 #3467]  INFO -- : Completed 200 OK in 24ms (Views: 11.8ms | ActiveRecord: 4.8ms)
+I, [2017-09-05T00:19:51.765083 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:19:51 +0900
+I, [2017-09-05T00:19:51.952389 #3467]  INFO -- : Started GET "/susanoo/page_contents/content?id=2&page_id=1" for 127.0.0.1 at 2017-09-05 00:19:51 +0900
+I, [2017-09-05T00:19:51.953268 #3467]  INFO -- : Processing by Susanoo::PageContentsController#content as HTML
+I, [2017-09-05T00:19:51.953359 #3467]  INFO -- :   Parameters: {"id"=>"2", "page_id"=>"1"}
+I, [2017-09-05T00:19:51.970984 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (8.1ms)
+I, [2017-09-05T00:19:51.971347 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.973209 #3467]  INFO -- :   Rendered inline template (0.6ms)
+I, [2017-09-05T00:19:51.973465 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (1.2ms)
+I, [2017-09-05T00:19:51.975182 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (3.5ms)
+I, [2017-09-05T00:19:51.975673 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:19:51.975842 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (13.2ms)
+I, [2017-09-05T00:19:51.976128 #3467]  INFO -- : Completed 200 OK in 23ms (Views: 11.2ms | ActiveRecord: 4.9ms)
+I, [2017-09-05T00:19:52.309696 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:19:52 +0900
+I, [2017-09-05T00:19:52.312487 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:52.313015 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:19:52.320369 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:19:52.320640 #3467]  INFO -- : Completed 404 Not Found in 7ms (Views: 1.8ms | ActiveRecord: 2.0ms)
+I, [2017-09-05T00:19:52.336594 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:19:52 +0900
+I, [2017-09-05T00:19:52.337385 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:19:52.337474 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:19:52.338748 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:19:52.338936 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:21:29.231368 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:21:29 +0900
+I, [2017-09-05T00:21:29.232958 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:21:29.233058 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\"><div class=\"editable data-type-div\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div>上記の3点を紹介したいと思います<ul><li>性能<ul><li>　</li><li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:21:29.251696 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (10.0ms)
+I, [2017-09-05T00:21:29.251912 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:21:29.253094 #3467]  INFO -- :   Rendered inline template (0.4ms)
+I, [2017-09-05T00:21:29.253279 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.9ms)
+I, [2017-09-05T00:21:29.254975 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.7ms)
+I, [2017-09-05T00:21:29.255676 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:21:29.255803 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (14.4ms)
+I, [2017-09-05T00:21:29.673302 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (6.6ms)
+I, [2017-09-05T00:21:29.673542 #3467]  INFO -- : Completed 200 OK in 440ms (Views: 8.9ms | ActiveRecord: 5.3ms)
+I, [2017-09-05T00:21:32.430344 #3467]  INFO -- : Started PATCH "/susanoo/page_contents/2" for 127.0.0.1 at 2017-09-05 00:21:32 +0900
+I, [2017-09-05T00:21:32.431472 #3467]  INFO -- : Processing by Susanoo::PageContentsController#update as JS
+I, [2017-09-05T00:21:32.431663 #3467]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"viauQaXPSFNtNkNm7fitc7TqO9NRpUc4BayemwDWEeI=", "template_id"=>"", "mode"=>"", "iframe_path"=>"/susanoo/page_contents/content?id=2&page_id=1", "page_content"=>{"content"=>"\r\n            <div class=\"susanoo-editable-field\">\r\n  <div class=\"editable data-type-div\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div>上記の3点を紹介したいと思います<ul><li>性能<ul><li>　</li><li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></div>\r\n</div>\r\n\r\n          ", "page_id"=>"1"}, "_save_temporarily"=>"", "commit"=>"save", "id"=>"2"}
+W, [2017-09-05T00:21:32.449169 #3467]  WARN -- : In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+I, [2017-09-05T00:21:32.473131 #3467]  INFO -- :   Rendered susanoo/page_contents/create.js.coffee (1.5ms)
+I, [2017-09-05T00:21:32.474147 #3467]  INFO -- : Completed 200 OK in 42ms (Views: 3.1ms | ActiveRecord: 10.7ms)
+I, [2017-09-05T00:21:32.490620 #3467]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 00:21:32 +0900
+I, [2017-09-05T00:21:32.493068 #3467]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T00:21:32.493169 #3467]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T00:21:32.521185 #3467]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (16.1ms)
+I, [2017-09-05T00:21:32.526234 #3467]  INFO -- :   Rendered shared/_navigation.html.erb (3.8ms)
+I, [2017-09-05T00:21:32.527435 #3467]  INFO -- : Completed 200 OK in 34ms (Views: 21.2ms | ActiveRecord: 6.0ms)
+I, [2017-09-05T00:21:32.577777 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:21:32 +0900
+I, [2017-09-05T00:21:35.180068 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:21:35 +0900
+I, [2017-09-05T00:21:35.181623 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:21:35.181708 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:21:35.190266 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (4.0ms)
+I, [2017-09-05T00:21:35.190783 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:21:35.191999 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:21:35.192109 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:21:35.192605 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.6ms)
+I, [2017-09-05T00:21:35.192798 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:21:35.192904 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (6.9ms)
+I, [2017-09-05T00:21:35.193099 #3467]  INFO -- : Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 2.1ms)
+I, [2017-09-05T00:21:37.540626 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:21:37 +0900
+I, [2017-09-05T00:21:37.541373 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:21:37.541431 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:21:37.542695 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:21:37.542837 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:21:37.565062 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:21:37 +0900
+I, [2017-09-05T00:21:37.566155 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:21:37.566228 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:21:37.570021 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:21:37.570300 #3467]  INFO -- : Completed 404 Not Found in 4ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+I, [2017-09-05T00:33:35.216867 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:33:35 +0900
+I, [2017-09-05T00:33:35.217532 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:33:35.217586 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:33:35.224949 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (4.8ms)
+I, [2017-09-05T00:33:35.225475 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:33:35.226616 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:33:35.226834 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.7ms)
+I, [2017-09-05T00:33:35.227867 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.2ms)
+I, [2017-09-05T00:33:35.228143 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:33:35.228303 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (8.5ms)
+I, [2017-09-05T00:33:35.228554 #3467]  INFO -- : Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 2.3ms)
+I, [2017-09-05T00:33:35.410953 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:33:35 +0900
+I, [2017-09-05T00:33:35.412758 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:35.412830 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:33:35.414458 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:33:35.414676 #3467]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+I, [2017-09-05T00:33:35.416621 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:33:35 +0900
+I, [2017-09-05T00:33:35.417317 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:35.417379 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:33:35.418586 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:33:35.418728 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:33:35.428281 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:33:35 +0900
+I, [2017-09-05T00:33:35.429183 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:35.429272 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:33:35.430502 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:33:35.430668 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:33:49.637336 #3467]  INFO -- : Started GET "/susanoo/page_contents/2/edit" for 127.0.0.1 at 2017-09-05 00:33:49 +0900
+I, [2017-09-05T00:33:49.638438 #3467]  INFO -- : Processing by Susanoo::PageContentsController#edit as HTML
+I, [2017-09-05T00:33:49.638585 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:33:49.655915 #3467]  INFO -- :   Rendered susanoo/page_contents/_form.html.erb (3.6ms)
+I, [2017-09-05T00:33:49.656157 #3467]  INFO -- :   Rendered susanoo/page_contents/edit.html.erb within layouts/editor (4.2ms)
+I, [2017-09-05T00:33:49.657723 #3467]  INFO -- :   Rendered plugins/form/_page_list.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.657934 #3467]  INFO -- :   Rendered plugins/form/_genre_list.html.erb (0.1ms)
+I, [2017-09-05T00:33:49.658331 #3467]  INFO -- :   Rendered plugins/form/_section_news.html.erb (0.3ms)
+I, [2017-09-05T00:33:49.658770 #3467]  INFO -- :   Rendered plugins/form/_section_news_by_path.html.erb (0.3ms)
+I, [2017-09-05T00:33:49.659134 #3467]  INFO -- :   Rendered plugins/form/_emergency.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.659298 #3467]  INFO -- :   Rendered plugins/form/_genre_down_list.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.659585 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.659878 #3467]  INFO -- :   Rendered plugins/form/_genre_news_list_truncate.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.660040 #3467]  INFO -- :   Rendered plugins/form/_section.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.660200 #3467]  INFO -- :   Rendered plugins/form/_section_top_list.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.660444 #3467]  INFO -- :   Rendered plugins/form/_sitemap.html.erb (0.1ms)
+I, [2017-09-05T00:33:49.660619 #3467]  INFO -- :   Rendered plugins/form/_sub_genre_list.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.661081 #3467]  INFO -- :   Rendered plugins/form/_counter.html.erb (0.3ms)
+I, [2017-09-05T00:33:49.661431 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_calendar.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.661788 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_calendar_pickup.html.erb (0.2ms)
+I, [2017-09-05T00:33:49.662040 #3467]  INFO -- :   Rendered vendor/engines/event_calendar/app/views/plugins/form/_event_page_list.html.erb (0.1ms)
+I, [2017-09-05T00:33:49.664478 #3467]  INFO -- : Completed 200 OK in 26ms (Views: 12.7ms | ActiveRecord: 5.1ms)
+I, [2017-09-05T00:33:49.686877 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:33:49 +0900
+I, [2017-09-05T00:33:49.880435 #3467]  INFO -- : Started GET "/susanoo/page_contents/content?id=2&page_id=1" for 127.0.0.1 at 2017-09-05 00:33:49 +0900
+I, [2017-09-05T00:33:49.882116 #3467]  INFO -- : Processing by Susanoo::PageContentsController#content as HTML
+I, [2017-09-05T00:33:49.882285 #3467]  INFO -- :   Parameters: {"id"=>"2", "page_id"=>"1"}
+I, [2017-09-05T00:33:49.893386 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (3.9ms)
+I, [2017-09-05T00:33:49.893576 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.894324 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:33:49.894451 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:33:49.894931 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.2ms)
+I, [2017-09-05T00:33:49.895092 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:33:49.895182 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (5.8ms)
+I, [2017-09-05T00:33:49.895333 #3467]  INFO -- : Completed 200 OK in 13ms (Views: 5.0ms | ActiveRecord: 3.2ms)
+I, [2017-09-05T00:33:50.291743 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:33:50 +0900
+I, [2017-09-05T00:33:50.292836 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:50.292943 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:33:50.295497 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:33:50.296489 #3467]  INFO -- : Completed 404 Not Found in 3ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+I, [2017-09-05T00:33:50.333219 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:33:50 +0900
+I, [2017-09-05T00:33:50.334408 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:50.334567 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:33:50.339642 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.3ms)
+I, [2017-09-05T00:33:50.340084 #3467]  INFO -- : Completed 404 Not Found in 5ms (Views: 2.0ms | ActiveRecord: 1.7ms)
+I, [2017-09-05T00:33:57.159280 #3467]  INFO -- : Started GET "/assets/ckeditor/config.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.206131 #3467]  INFO -- : Started GET "/assets/ckeditor/skins/moono/editor.css?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.213191 #3467]  INFO -- : Started GET "/assets/ckeditor/lang/ja.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.229721 #3467]  INFO -- : Started GET "/assets/ckeditor/styles.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.252610 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/jisxtable/plugin.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.261485 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/jisxtabletools/plugin.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.263986 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/letterspacing/plugin.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.280992 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/jisxtable/lang/ja.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.284037 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/letterspacing/lang/ja.js?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.384770 #3467]  INFO -- : Started GET "/assets/ckeditor/skins/moono/icons.png" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.425174 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/jisxtable/icons/jisxtable.png?t=DAED" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.558946 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.559769 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:57.559845 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:33:57.562917 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:33:57.563077 #3467]  INFO -- : Completed 404 Not Found in 3ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+I, [2017-09-05T00:33:57.681827 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:33:57 +0900
+I, [2017-09-05T00:33:57.685026 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:33:57.685344 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:33:57.687017 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:33:57.687210 #3467]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:33:59.831997 #3467]  INFO -- : Started GET "/assets/ckeditor/plugins/magicline/images/icon.png" for 127.0.0.1 at 2017-09-05 00:33:59 +0900
+I, [2017-09-05T00:34:01.517601 #3467]  INFO -- : Started GET "/font/font-awesome.min.css,https://fonts.googleapis.com/css?family=Montserrat:400,700,https://fonts.googleapis.com/css?family=Kaushan+Script,https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic,https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700,/mystyle/bootstrap.css,/mycss/agency.min.css,/assets/editor.iframe-44732b00cc7e9c040bc24746b122479b.css" for 127.0.0.1 at 2017-09-05 00:34:01 +0900
+I, [2017-09-05T00:34:01.519352 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as HTML
+I, [2017-09-05T00:34:01.519436 #3467]  INFO -- :   Parameters: {"family"=>"Montserrat:400,700,https://fonts.googleapis.com/css?family=Kaushan Script,https://fonts.googleapis.com/css?family=Droid Serif:400,700,400italic,700italic,https://fonts.googleapis.com/css?family=Roboto Slab:400,100,300,700,/mystyle/bootstrap.css,/mycss/agency.min.css,/assets/editor.iframe-44732b00cc7e9c040bc24746b122479b.css", "path"=>"font/font-awesome.min.css,https:/fonts.googleapis.com/css"}
+I, [2017-09-05T00:34:01.522497 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.7ms)
+I, [2017-09-05T00:34:01.522674 #3467]  INFO -- : Completed 404 Not Found in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+I, [2017-09-05T00:34:01.523495 #3467]  INFO -- : Started GET "/assets/ckeditor/skins/moono/editor.css?t=DAEDeditor.css" for 127.0.0.1 at 2017-09-05 00:34:01 +0900
+I, [2017-09-05T00:39:21.679695 #3467]  INFO -- : Started POST "/susanoo/page_contents/check?mobile=false&page_id=1" for 127.0.0.1 at 2017-09-05 00:39:21 +0900
+I, [2017-09-05T00:39:21.680760 #3467]  INFO -- : Processing by Susanoo::PageContentsController#check as JS
+I, [2017-09-05T00:39:21.680874 #3467]  INFO -- :   Parameters: {"page_id"=>"1", "content"=>"<div class=\"susanoo-editable-field\"><div class=\"editable data-type-div\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div>上記の3点を紹介したいと思います<ul><li>性能<ul><li>　</li><li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></div></div>", "mobile"=>"false"}
+I, [2017-09-05T00:39:21.694855 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (6.8ms)
+I, [2017-09-05T00:39:21.695320 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:39:21.698128 #3467]  INFO -- :   Rendered inline template (1.3ms)
+I, [2017-09-05T00:39:21.698489 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (2.0ms)
+I, [2017-09-05T00:39:21.701185 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (5.4ms)
+I, [2017-09-05T00:39:21.702006 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T00:39:21.702255 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (14.4ms)
+I, [2017-09-05T00:39:21.926191 #3467]  INFO -- :   Rendered susanoo/page_contents/check.js.coffee (6.9ms)
+I, [2017-09-05T00:39:21.926419 #3467]  INFO -- : Completed 200 OK in 245ms (Views: 7.8ms | ActiveRecord: 3.3ms)
+I, [2017-09-05T00:39:22.780945 #3467]  INFO -- : Started PATCH "/susanoo/page_contents/2" for 127.0.0.1 at 2017-09-05 00:39:22 +0900
+I, [2017-09-05T00:39:22.781877 #3467]  INFO -- : Processing by Susanoo::PageContentsController#update as JS
+I, [2017-09-05T00:39:22.782024 #3467]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"viauQaXPSFNtNkNm7fitc7TqO9NRpUc4BayemwDWEeI=", "template_id"=>"", "mode"=>"", "iframe_path"=>"/susanoo/page_contents/content?id=2&page_id=1", "page_content"=>{"content"=>"\r\n            <div class=\"susanoo-editable-field\">\r\n  <div class=\"editable data-type-div\"><div class=\"container\"><h1>おすすめのノートパソコン</h1><ul><li>初心者向けノートPC</li><li>学生向けノートPC/li&gt;</li><li>ハイスペックノートPC</li></ul></div>上記の3点を紹介したいと思います<ul><li>性能<ul><li>　</li><li>CPU</li><li>メモリ</li><li>ストレージ</li></ul></li><li>機動性<ul><li>大きさ</li><li>重さ</li><li>バッテリー</li></ul></li></ul></div>\r\n</div>\r\n\r\n          ", "page_id"=>"1"}, "_save_temporarily"=>"", "commit"=>"save", "id"=>"2"}
+W, [2017-09-05T00:39:22.800674 #3467]  WARN -- : In Rails 4.1 delete_all on associations would not fire callbacks. It means if the :dependent option is :destroy then the associated records would be deleted without loading and invoking callbacks.
+I, [2017-09-05T00:39:22.818125 #3467]  INFO -- :   Rendered susanoo/page_contents/create.js.coffee (0.7ms)
+I, [2017-09-05T00:39:22.818307 #3467]  INFO -- : Completed 200 OK in 36ms (Views: 1.3ms | ActiveRecord: 10.0ms)
+I, [2017-09-05T00:39:22.833181 #3467]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 00:39:22 +0900
+I, [2017-09-05T00:39:22.833998 #3467]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T00:39:22.834111 #3467]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T00:39:22.864979 #3467]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (16.0ms)
+I, [2017-09-05T00:39:22.867616 #3467]  INFO -- :   Rendered shared/_navigation.html.erb (2.0ms)
+I, [2017-09-05T00:39:22.868734 #3467]  INFO -- : Completed 200 OK in 35ms (Views: 17.4ms | ActiveRecord: 7.7ms)
+I, [2017-09-05T00:39:22.932062 #3467]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 00:39:22 +0900
+I, [2017-09-05T00:39:26.641313 #3467]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:39:26 +0900
+I, [2017-09-05T00:39:26.642261 #3467]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:39:26.642337 #3467]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:39:26.652532 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (6.3ms)
+I, [2017-09-05T00:39:26.652745 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:39:26.653526 #3467]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:39:26.653637 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:39:26.654210 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.3ms)
+I, [2017-09-05T00:39:26.654381 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:39:26.654473 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (8.6ms)
+I, [2017-09-05T00:39:26.654641 #3467]  INFO -- : Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 2.9ms)
+I, [2017-09-05T00:41:09.819356 #3467]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:41:09 +0900
+I, [2017-09-05T00:41:09.820067 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:41:09.820143 #3467]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:41:09.821358 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:41:09.821494 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:41:09.844421 #3467]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:41:09 +0900
+I, [2017-09-05T00:41:09.847559 #3467]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:41:09.847835 #3467]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:41:09.849019 #3467]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:41:09.849164 #3467]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:42:11.984603 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:42:11 +0900
+I, [2017-09-05T00:42:12.058873 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:42:12.059018 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:42:12.073991 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.7ms)
+I, [2017-09-05T00:42:12.074376 #5148]  INFO -- : Completed 404 Not Found in 15ms (Views: 5.5ms | ActiveRecord: 4.9ms)
+I, [2017-09-05T00:42:12.075707 #5148]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:42:12 +0900
+I, [2017-09-05T00:42:12.079634 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:42:12.079760 #5148]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:42:12.081821 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:42:12.082077 #5148]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:42:14.046482 #5148]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:42:14 +0900
+I, [2017-09-05T00:42:14.047964 #5148]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:42:14.048046 #5148]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:42:14.124463 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (24.5ms)
+I, [2017-09-05T00:42:14.125509 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.3ms)
+I, [2017-09-05T00:42:14.128190 #5148]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:42:14.128343 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.9ms)
+I, [2017-09-05T00:42:14.129136 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (3.1ms)
+I, [2017-09-05T00:42:14.130076 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.3ms)
+I, [2017-09-05T00:42:14.130222 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (31.4ms)
+I, [2017-09-05T00:42:14.130467 #5148]  INFO -- : Completed 200 OK in 82ms (Views: 26.7ms | ActiveRecord: 19.3ms)
+I, [2017-09-05T00:42:14.603359 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:42:14 +0900
+I, [2017-09-05T00:42:14.604922 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:42:14.605047 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:42:14.608786 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:42:14.609177 #5148]  INFO -- : Completed 404 Not Found in 4ms (Views: 1.5ms | ActiveRecord: 1.2ms)
+I, [2017-09-05T00:42:14.617814 #5148]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:42:14 +0900
+I, [2017-09-05T00:42:14.619745 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:42:14.619903 #5148]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:42:14.626155 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.2ms)
+I, [2017-09-05T00:42:14.626471 #5148]  INFO -- : Completed 404 Not Found in 6ms (Views: 1.7ms | ActiveRecord: 2.0ms)
+I, [2017-09-05T00:42:14.649864 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:42:14 +0900
+I, [2017-09-05T00:42:14.651018 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:42:14.651164 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:42:14.653015 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:42:14.653279 #5148]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+I, [2017-09-05T00:46:26.547765 #5148]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:46:26 +0900
+I, [2017-09-05T00:46:26.548537 #5148]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:46:26.548602 #5148]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:46:26.560481 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (8.0ms)
+I, [2017-09-05T00:46:26.561129 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.2ms)
+I, [2017-09-05T00:46:26.562668 #5148]  INFO -- :   Rendered inline template (0.4ms)
+I, [2017-09-05T00:46:26.562769 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.8ms)
+I, [2017-09-05T00:46:26.563308 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (2.0ms)
+I, [2017-09-05T00:46:26.563471 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:46:26.563557 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (11.3ms)
+I, [2017-09-05T00:46:26.563715 #5148]  INFO -- : Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 3.6ms)
+I, [2017-09-05T00:46:26.817259 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:46:26 +0900
+I, [2017-09-05T00:46:26.818433 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:46:26.818541 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:46:26.820537 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:46:26.820721 #5148]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+I, [2017-09-05T00:46:26.849155 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:46:26 +0900
+I, [2017-09-05T00:46:26.850033 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:46:26.850142 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:46:26.851420 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T00:46:26.851575 #5148]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T00:46:26.882519 #5148]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:46:26 +0900
+I, [2017-09-05T00:46:26.883831 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:46:26.883942 #5148]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:46:26.885801 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:46:26.886111 #5148]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:48:47.955536 #5148]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:48:47 +0900
+I, [2017-09-05T00:48:47.956240 #5148]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:48:47.956314 #5148]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:48:47.970969 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (11.4ms)
+I, [2017-09-05T00:48:47.971427 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T00:48:47.972390 #5148]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:48:47.972508 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T00:48:47.973063 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.5ms)
+I, [2017-09-05T00:48:47.973237 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:48:47.973334 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (14.4ms)
+I, [2017-09-05T00:48:47.973484 #5148]  INFO -- : Completed 200 OK in 17ms (Views: 8.9ms | ActiveRecord: 6.5ms)
+I, [2017-09-05T00:48:48.189109 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:48:48 +0900
+I, [2017-09-05T00:48:48.189978 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:48:48.190044 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:48:48.191314 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T00:48:48.191452 #5148]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T00:48:48.209795 #5148]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 00:48:48 +0900
+I, [2017-09-05T00:48:48.211061 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:48:48.211211 #5148]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T00:48:48.213671 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.2ms)
+I, [2017-09-05T00:48:48.214955 #5148]  INFO -- : Completed 404 Not Found in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:48:48.244303 #5148]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 00:48:48 +0900
+I, [2017-09-05T00:48:48.245370 #5148]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T00:48:48.245522 #5148]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T00:48:48.248571 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.2ms)
+I, [2017-09-05T00:48:48.249687 #5148]  INFO -- : Completed 404 Not Found in 4ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T00:49:08.576600 #5148]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 00:49:08 +0900
+I, [2017-09-05T00:49:08.577324 #5148]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T00:49:08.577393 #5148]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T00:49:08.584200 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (3.0ms)
+I, [2017-09-05T00:49:08.584417 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T00:49:08.585107 #5148]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T00:49:08.585220 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.4ms)
+I, [2017-09-05T00:49:08.585718 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.2ms)
+I, [2017-09-05T00:49:08.585870 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T00:49:08.585954 #5148]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (4.9ms)
+I, [2017-09-05T00:49:08.586127 #5148]  INFO -- : Completed 200 OK in 9ms (Views: 4.6ms | ActiveRecord: 1.8ms)
+I, [2017-09-05T10:22:28.389041 #21808]  INFO -- : Started GET "/" for 127.0.0.1 at 2017-09-05 10:22:28 +0900
+I, [2017-09-05T10:22:28.521124 #21808]  INFO -- : Processing by Susanoo::VisitorsController#view as HTML
+I, [2017-09-05T10:22:28.723764 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (17.3ms)
+I, [2017-09-05T10:22:28.725388 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.5ms)
+I, [2017-09-05T10:22:28.729773 #21808]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T10:22:28.729897 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (1.0ms)
+I, [2017-09-05T10:22:28.730536 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (4.1ms)
+I, [2017-09-05T10:22:28.731815 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.4ms)
+I, [2017-09-05T10:22:28.731961 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (27.1ms)
+I, [2017-09-05T10:22:28.732475 #21808]  INFO -- : Completed 200 OK in 211ms (Views: 24.9ms | ActiveRecord: 139.7ms)
+I, [2017-09-05T10:22:38.811163 #21808]  INFO -- : Started GET "/susanoo" for 127.0.0.1 at 2017-09-05 10:22:38 +0900
+I, [2017-09-05T10:22:38.815706 #21808]  INFO -- : Processing by Susanoo::UsersController#login as HTML
+I, [2017-09-05T10:22:38.857906 #21808]  INFO -- :   Rendered shared/infos/_index.html.erb (6.9ms)
+I, [2017-09-05T10:22:38.858025 #21808]  INFO -- :   Rendered susanoo/users/login.html.erb within layouts/application (27.8ms)
+I, [2017-09-05T10:22:38.942634 #21808]  INFO -- :   Rendered shared/_navigation.html.erb (2.1ms)
+I, [2017-09-05T10:22:39.029775 #21808]  INFO -- : Completed 200 OK in 214ms (Views: 203.8ms | ActiveRecord: 7.5ms)
+I, [2017-09-05T10:22:39.051423 #21808]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 10:22:39 +0900
+I, [2017-09-05T10:22:40.494564 #21808]  INFO -- : Started POST "/susanoo/users/authenticate" for 127.0.0.1 at 2017-09-05 10:22:40 +0900
+I, [2017-09-05T10:22:40.499438 #21808]  INFO -- : Processing by Susanoo::UsersController#authenticate as HTML
+I, [2017-09-05T10:22:40.499540 #21808]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ycyxXA2N8Sqnxy+mtxPyzJUTogqGeFYZl8o0/kJoF8=", "user"=>{"login"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+I, [2017-09-05T10:22:40.519457 #21808]  INFO -- : Redirected to http://0.0.0.0:8000/susanoo/dashboards
+I, [2017-09-05T10:22:40.519840 #21808]  INFO -- : Completed 302 Found in 20ms (ActiveRecord: 6.2ms)
+I, [2017-09-05T10:22:40.553387 #21808]  INFO -- : Started GET "/susanoo/dashboards" for 127.0.0.1 at 2017-09-05 10:22:40 +0900
+I, [2017-09-05T10:22:40.555453 #21808]  INFO -- : Processing by Susanoo::DashboardsController#index as HTML
+I, [2017-09-05T10:22:40.577630 #21808]  INFO -- :   Rendered shared/infos/_index.html.erb (0.3ms)
+I, [2017-09-05T10:22:40.577762 #21808]  INFO -- :   Rendered susanoo/dashboards/index.html.erb within layouts/application (13.0ms)
+I, [2017-09-05T10:22:40.585885 #21808]  INFO -- :   Rendered shared/_navigation.html.erb (5.6ms)
+I, [2017-09-05T10:22:40.589844 #21808]  INFO -- : Completed 200 OK in 34ms (Views: 29.6ms | ActiveRecord: 2.2ms)
+I, [2017-09-05T10:22:40.644999 #21808]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 10:22:40 +0900
+I, [2017-09-05T10:22:42.008827 #21808]  INFO -- : Started GET "/susanoo/pages?search%5Badmission%5D=0&search%5Brecursive%5D=1&search_genre_id=1" for 127.0.0.1 at 2017-09-05 10:22:42 +0900
+I, [2017-09-05T10:22:42.011326 #21808]  INFO -- : Processing by Susanoo::PagesController#index as HTML
+I, [2017-09-05T10:22:42.011406 #21808]  INFO -- :   Parameters: {"search"=>{"admission"=>"0", "recursive"=>"1"}, "search_genre_id"=>"1"}
+I, [2017-09-05T10:22:42.075907 #21808]  INFO -- :   Rendered susanoo/pages/_page_list.html.erb (27.5ms)
+I, [2017-09-05T10:22:42.076060 #21808]  INFO -- :   Rendered susanoo/pages/_pages.html.erb (43.8ms)
+I, [2017-09-05T10:22:42.076544 #21808]  INFO -- :   Rendered susanoo/pages/index.html.erb within layouts/explore (46.5ms)
+I, [2017-09-05T10:22:42.086355 #21808]  INFO -- :   Rendered shared/_navigation.html.erb (2.5ms)
+I, [2017-09-05T10:22:42.092337 #21808]  INFO -- : Completed 200 OK in 81ms (Views: 57.8ms | ActiveRecord: 9.7ms)
+I, [2017-09-05T10:22:42.111421 #21808]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 10:22:42 +0900
+I, [2017-09-05T10:22:45.451555 #21808]  INFO -- : Started GET "/susanoo/visitors/1/preview" for 127.0.0.1 at 2017-09-05 10:22:45 +0900
+I, [2017-09-05T10:22:45.455621 #21808]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T10:22:45.455729 #21808]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T10:22:45.468434 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (8.0ms)
+I, [2017-09-05T10:22:45.468718 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T10:22:45.469698 #21808]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T10:22:45.469815 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T10:22:45.470414 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.5ms)
+I, [2017-09-05T10:22:45.470582 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T10:22:45.470664 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (10.4ms)
+I, [2017-09-05T10:22:45.470818 #21808]  INFO -- : Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 3.6ms)
+I, [2017-09-05T10:22:55.367667 #21808]  INFO -- : Started GET "/susanoo/pages/1" for 127.0.0.1 at 2017-09-05 10:22:55 +0900
+I, [2017-09-05T10:22:55.372141 #21808]  INFO -- : Processing by Susanoo::PagesController#show as HTML
+I, [2017-09-05T10:22:55.372408 #21808]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2017-09-05T10:22:55.416132 #21808]  INFO -- :   Rendered susanoo/pages/show.html.erb within layouts/application (29.4ms)
+I, [2017-09-05T10:22:55.419406 #21808]  INFO -- :   Rendered shared/_navigation.html.erb (1.9ms)
+I, [2017-09-05T10:22:55.420505 #21808]  INFO -- : Completed 200 OK in 48ms (Views: 27.6ms | ActiveRecord: 14.1ms)
+I, [2017-09-05T10:22:55.473959 #21808]  INFO -- : Started GET "/assets/ckeditor/ckeditor.js" for 127.0.0.1 at 2017-09-05 10:22:55 +0900
+I, [2017-09-05T10:22:57.408486 #21808]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 10:22:57 +0900
+I, [2017-09-05T10:22:57.410206 #21808]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T10:22:57.410333 #21808]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T10:22:57.419098 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (3.3ms)
+I, [2017-09-05T10:22:57.419436 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T10:22:57.422416 #21808]  INFO -- :   Rendered inline template (1.3ms)
+I, [2017-09-05T10:22:57.422848 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (2.3ms)
+I, [2017-09-05T10:22:57.424957 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (5.2ms)
+I, [2017-09-05T10:22:57.425197 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T10:22:57.425351 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (9.7ms)
+I, [2017-09-05T10:22:57.425569 #21808]  INFO -- : Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 2.3ms)
+I, [2017-09-05T10:23:12.878754 #21808]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 10:23:12 +0900
+I, [2017-09-05T10:23:12.879871 #21808]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T10:23:12.879974 #21808]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T10:23:12.888913 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (4.8ms)
+I, [2017-09-05T10:23:12.889188 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.1ms)
+I, [2017-09-05T10:23:12.890499 #21808]  INFO -- :   Rendered inline template (0.5ms)
+I, [2017-09-05T10:23:12.890673 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.8ms)
+I, [2017-09-05T10:23:12.893100 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (3.6ms)
+I, [2017-09-05T10:23:12.893645 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.1ms)
+I, [2017-09-05T10:23:12.893817 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (9.8ms)
+I, [2017-09-05T10:23:12.894227 #21808]  INFO -- : Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 2.6ms)
+I, [2017-09-05T10:50:17.458020 #21808]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 10:50:17 +0900
+I, [2017-09-05T10:50:17.458968 #21808]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T10:50:17.459045 #21808]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T10:50:17.473129 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (9.8ms)
+I, [2017-09-05T10:50:17.473327 #21808]  INFO -- : Completed 404 Not Found in 14ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T10:50:54.789730 #21808]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 10:50:54 +0900
+I, [2017-09-05T10:50:54.790806 #21808]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T10:50:54.790868 #21808]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T10:50:54.799840 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (5.8ms)
+I, [2017-09-05T10:50:54.800735 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.2ms)
+I, [2017-09-05T10:50:54.801769 #21808]  INFO -- :   Rendered inline template (0.3ms)
+I, [2017-09-05T10:50:54.801922 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T10:50:54.802702 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.8ms)
+I, [2017-09-05T10:50:54.802985 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T10:50:54.803067 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (9.4ms)
+I, [2017-09-05T10:50:54.803226 #21808]  INFO -- : Completed 200 OK in 12ms (Views: 7.8ms | ActiveRecord: 2.6ms)
+I, [2017-09-05T10:50:55.002598 #21808]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 10:50:55 +0900
+I, [2017-09-05T10:50:55.003379 #21808]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T10:50:55.003461 #21808]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T10:50:55.005731 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.3ms)
+I, [2017-09-05T10:50:55.006399 #21808]  INFO -- : Completed 404 Not Found in 3ms (Views: 1.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T10:50:55.019350 #21808]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 10:50:55 +0900
+I, [2017-09-05T10:50:55.021955 #21808]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T10:50:55.022077 #21808]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T10:50:55.023509 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T10:50:55.023694 #21808]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T10:50:55.062198 #21808]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 10:50:55 +0900
+I, [2017-09-05T10:50:55.063151 #21808]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T10:50:55.063259 #21808]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T10:50:55.064714 #21808]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T10:50:55.064917 #21808]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T11:06:23.057684 #24529]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 11:06:23 +0900
+I, [2017-09-05T11:06:23.103733 #24529]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T11:06:23.103819 #24529]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T11:06:23.168214 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (17.5ms)
+I, [2017-09-05T11:06:23.169306 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.3ms)
+I, [2017-09-05T11:06:23.171028 #24529]  INFO -- :   Rendered inline template (0.1ms)
+I, [2017-09-05T11:06:23.171140 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.6ms)
+I, [2017-09-05T11:06:23.171604 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.9ms)
+I, [2017-09-05T11:06:23.172251 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.2ms)
+I, [2017-09-05T11:06:23.172356 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (22.5ms)
+I, [2017-09-05T11:06:23.172524 #24529]  INFO -- : Completed 200 OK in 69ms (Views: 19.5ms | ActiveRecord: 17.7ms)
+I, [2017-09-05T11:06:23.325145 #24529]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 11:06:23 +0900
+I, [2017-09-05T11:06:23.330056 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:06:23.330155 #24529]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T11:06:23.334480 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.4ms)
+I, [2017-09-05T11:06:23.334698 #24529]  INFO -- : Completed 404 Not Found in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T11:06:23.336953 #24529]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 11:06:23 +0900
+I, [2017-09-05T11:06:23.337809 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:06:23.337882 #24529]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T11:06:23.339125 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T11:06:23.339257 #24529]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T11:18:28.489149 #24529]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 11:18:28 +0900
+I, [2017-09-05T11:18:28.490162 #24529]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T11:18:28.490235 #24529]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T11:18:28.498553 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (2.9ms)
+I, [2017-09-05T11:18:28.498753 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T11:18:28.499657 #24529]  INFO -- :   Rendered inline template (0.3ms)
+I, [2017-09-05T11:18:28.499769 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T11:18:28.500378 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.4ms)
+I, [2017-09-05T11:18:28.500575 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T11:18:28.500661 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (5.2ms)
+I, [2017-09-05T11:18:28.500788 #24529]  INFO -- : Completed 200 OK in 10ms (Views: 4.2ms | ActiveRecord: 3.0ms)
+I, [2017-09-05T11:18:28.659485 #24529]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 11:18:28 +0900
+I, [2017-09-05T11:18:28.660227 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:18:28.660329 #24529]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T11:18:28.661552 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.1ms)
+I, [2017-09-05T11:18:28.661689 #24529]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T11:18:28.675635 #24529]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 11:18:28 +0900
+I, [2017-09-05T11:18:28.676406 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:18:28.676466 #24529]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T11:18:28.677468 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T11:18:28.677583 #24529]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T11:18:48.100301 #24529]  INFO -- : Started GET "/popper/popper.min.js.map" for 127.0.0.1 at 2017-09-05 11:18:48 +0900
+I, [2017-09-05T11:18:48.100983 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:18:48.101042 #24529]  INFO -- :   Parameters: {"path"=>"popper/popper.min.js"}
+I, [2017-09-05T11:18:48.102216 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T11:18:48.102370 #24529]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+I, [2017-09-05T11:18:48.106350 #24529]  INFO -- : Started GET "/mystyle/bootstrap.css.map" for 127.0.0.1 at 2017-09-05 11:18:48 +0900
+I, [2017-09-05T11:18:48.107276 #24529]  INFO -- : Processing by Susanoo::VisitorsController#view as 
+I, [2017-09-05T11:18:48.107344 #24529]  INFO -- :   Parameters: {"path"=>"mystyle/bootstrap.css"}
+I, [2017-09-05T11:18:48.108437 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/not_found.html.erb (0.0ms)
+I, [2017-09-05T11:18:48.108597 #24529]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+I, [2017-09-05T11:24:03.081855 #24529]  INFO -- : Started GET "/susanoo/visitors/2/preview" for 127.0.0.1 at 2017-09-05 11:24:03 +0900
+I, [2017-09-05T11:24:03.082705 #24529]  INFO -- : Processing by Susanoo::VisitorsController#preview as HTML
+I, [2017-09-05T11:24:03.082789 #24529]  INFO -- :   Parameters: {"id"=>"2"}
+I, [2017-09-05T11:24:03.091771 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header.html.erb (5.4ms)
+I, [2017-09-05T11:24:03.091987 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_header_sub.html.erb (0.0ms)
+I, [2017-09-05T11:24:03.092750 #24529]  INFO -- :   Rendered inline template (0.2ms)
+I, [2017-09-05T11:24:03.092876 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_content.html.erb (0.5ms)
+I, [2017-09-05T11:24:03.093345 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/_body.html.erb (1.2ms)
+I, [2017-09-05T11:24:03.093501 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/shared/_footer.html.erb (0.0ms)
+I, [2017-09-05T11:24:03.093576 #24529]  INFO -- :   Rendered vendor/engines/site_design/app/views/susanoo/visitors/top/show.html.erb (7.4ms)
+I, [2017-09-05T11:24:03.093698 #24529]  INFO -- : Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 2.8ms)
