@@ -29,7 +29,7 @@
 #/db/migrate/*.*.rb
 
 # Ignore public. directory
-/public.
+#/public.
 
 # Ignore public/mp3_error_log.html file
 /public/mp3_error_log.html
