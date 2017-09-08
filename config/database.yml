@@ -1,22 +1,22 @@
 development:
   adapter: postgresql
   database: cms_development
-  username: ukeisuke1996@gmail.com
+  username: cms
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
   database: cms_test
-  username: ukeisuke1996@gmail.com
+  username: cms
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   database: cms_production
-  username: ukeisuke1996@gmail.com
+  username: cms
   #パスワードを追加
-  password: Kei
+  password: 
   pool: 5
   timeout: 5000
