@@ -138,10 +138,10 @@ accessibility:
   https: false
 
   # michecker が動作しているサーバのホスト名を指定します
-  host : localhost
+  host : cms2017checker.herokuapp.com
 
   # michecker が待ち受けているポートの番号を指定します
-  port : 8080
+  port : 80
 
   # アクセスビリティチェックAPIのパスを指定します
   api  : '/api/validate'
